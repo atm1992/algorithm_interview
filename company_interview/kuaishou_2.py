@@ -28,16 +28,16 @@ def func(n):
 
 def func_backtrack(N, tmp):
     '''
-        使用
+	使用backtrack
     '''
 	if N == 0:
 		result.append(tmp[:])
 		return 
 	
 	for i in range(1, 4):
-		if N - i >= 0:
+		if N >= i:
 			tmp.append(i)
-			funct(N-i, tmp)
+			func_backtrack(N-i, tmp)
 			tmp.pop(-1)
 
 
