@@ -26,5 +26,24 @@ def func(n):
     return res1 + res2 + res3
 
 
+def func_backtrack(N, tmp):
+    '''
+        使用
+    '''
+	if N == 0:
+		result.append(tmp[:])
+		return 
+	
+	for i in range(1, 4):
+		if N - i >= 0:
+			tmp.append(i)
+			funct(N-i, tmp)
+			tmp.pop(-1)
+
+
 if __name__ == '__main__':
     print(func(4))
+    
+    result = []
+    func_backtrack(4, [])
+    print(result)
