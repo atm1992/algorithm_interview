@@ -33,7 +33,7 @@ def func0(n, m):
             
     if m < 0:
         ret = func(n, 0-m)
-        return 1 / ret
+        return float(1) / ret
     else:
         ret = func(n, m)
         return ret
