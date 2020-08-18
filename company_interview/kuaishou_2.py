@@ -27,23 +27,23 @@ def func(n):
 
 
 def func_backtrack(N, tmp):
-    '''
+    """
 	使用backtrack
-    '''
-	if N == 0:
-		result.append(tmp[:])
-		return 
-	
-	for i in range(1, 4):
-		if N >= i:
-			tmp.append(i)
-			func_backtrack(N-i, tmp)
-			tmp.pop(-1)
+    """
+    if N == 0:
+        result.append(tmp[:])
+        return
+
+    for i in range(1, 4):
+        if N >= i:
+            tmp.append(i)
+            func_backtrack(N - i, tmp)
+            tmp.pop()
 
 
 if __name__ == '__main__':
     print(func(4))
-    
+
     result = []
     func_backtrack(4, [])
     print(result)
