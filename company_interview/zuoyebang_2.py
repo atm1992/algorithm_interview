@@ -56,4 +56,4 @@
 
 8. 数据挖掘：基尼系数、信息增益、信息熵等概念，SVM高斯核
 
-9. 两个字符串的最长公共子串。
+9. 两个字符串的最长公共子串。类似问题：最长公共子序列。（ https://leetcode-cn.com/problems/longest-common-subsequence/ ）
